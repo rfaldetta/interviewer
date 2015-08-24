@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+  # Index
+  root 'practice_questions#index'
+
+
   # Routes for the Question_length resource:
   # CREATE
   get "/question_lengths/new", :controller => "question_lengths", :action => "new"
