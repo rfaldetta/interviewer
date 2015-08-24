@@ -1,0 +1,25 @@
+<div class="page-header">
+  <h3>Question Length #<%= @question_length.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Name</dt>
+      <dd><%= @question_length.name %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/question_lengths" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/question_lengths/<%= @question_length.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_question_length/<%= @question_length.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
